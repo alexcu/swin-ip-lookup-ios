@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAE3CF68190609370090909E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE3CF67190609370090909E /* Foundation.framework */; };
+		FAE3CF6A190609370090909E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE3CF69190609370090909E /* CoreGraphics.framework */; };
+		FAE3CF6C190609370090909E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE3CF6B190609370090909E /* UIKit.framework */; };
+		FAE3CF72190609370090909E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAE3CF70190609370090909E /* InfoPlist.strings */; };
+		FAE3CF74190609370090909E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE3CF73190609370090909E /* main.m */; };
+		FAE3CF78190609370090909E /* IPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE3CF77190609370090909E /* IPAppDelegate.m */; };
+		FAE3CF7B190609370090909E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE3CF79190609370090909E /* Main.storyboard */; };
+		FAE3CF7E190609370090909E /* IPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE3CF7D190609370090909E /* IPViewController.m */; };
+		FAE3CF80190609370090909E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE3CF7F190609370090909E /* Images.xcassets */; };
+		FAE3CF87190609370090909E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE3CF86190609370090909E /* XCTest.framework */; };
+		FAE3CF88190609370090909E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE3CF67190609370090909E /* Foundation.framework */; };
+		FAE3CF89190609370090909E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE3CF6B190609370090909E /* UIKit.framework */; };
+		FAE3CF91190609370090909E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAE3CF8F190609370090909E /* InfoPlist.strings */; };
+		FAE3CF93190609370090909E /* IPLookupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE3CF92190609370090909E /* IPLookupTests.m */; };
+		FAE3CF9D19060B160090909E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE3CF9C19060B160090909E /* MapKit.framework */; };
+		FAE3CFA419060BCD0090909E /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE3CFA319060BCD0090909E /* IPAddress.m */; };
+		FAE3CFA719060F5D0090909E /* IPGetInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE3CFA619060F5D0090909E /* IPGetInfoRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE3CF8A190609370090909E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE3CF5C190609370090909E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE3CF63190609370090909E;
+			remoteInfo = IPLookup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAE3CF64190609370090909E /* IPLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE3CF67190609370090909E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAE3CF69190609370090909E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAE3CF6B190609370090909E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAE3CF6F190609370090909E /* IPLookup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IPLookup-Info.plist"; sourceTree = "<group>"; };
+		FAE3CF71190609370090909E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAE3CF73190609370090909E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAE3CF75190609370090909E /* IPLookup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPLookup-Prefix.pch"; sourceTree = "<group>"; };
+		FAE3CF76190609370090909E /* IPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPAppDelegate.h; sourceTree = "<group>"; };
+		FAE3CF77190609370090909E /* IPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPAppDelegate.m; sourceTree = "<group>"; };
+		FAE3CF7A190609370090909E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAE3CF7C190609370090909E /* IPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPViewController.h; sourceTree = "<group>"; };
+		FAE3CF7D190609370090909E /* IPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPViewController.m; sourceTree = "<group>"; };
+		FAE3CF7F190609370090909E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAE3CF85190609370090909E /* IPLookupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPLookupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE3CF86190609370090909E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FAE3CF8E190609370090909E /* IPLookupTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IPLookupTests-Info.plist"; sourceTree = "<group>"; };
+		FAE3CF90190609370090909E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAE3CF92190609370090909E /* IPLookupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPLookupTests.m; sourceTree = "<group>"; };
+		FAE3CF9C19060B160090909E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FAE3CFA219060BCD0090909E /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPAddress.h; path = IPLookup/IPAddress.h; sourceTree = "<group>"; };
+		FAE3CFA319060BCD0090909E /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPAddress.m; path = IPLookup/IPAddress.m; sourceTree = "<group>"; };
+		FAE3CFA519060F5D0090909E /* IPGetInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPGetInfoRequest.h; path = IPLookup/IPGetInfoRequest.h; sourceTree = "<group>"; };
+		FAE3CFA619060F5D0090909E /* IPGetInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPGetInfoRequest.m; path = IPLookup/IPGetInfoRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE3CF61190609370090909E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3CF9D19060B160090909E /* MapKit.framework in Frameworks */,
+				FAE3CF6A190609370090909E /* CoreGraphics.framework in Frameworks */,
+				FAE3CF6C190609370090909E /* UIKit.framework in Frameworks */,
+				FAE3CF68190609370090909E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3CF82190609370090909E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3CF87190609370090909E /* XCTest.framework in Frameworks */,
+				FAE3CF89190609370090909E /* UIKit.framework in Frameworks */,
+				FAE3CF88190609370090909E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAE3CF5B190609370090909E = {
+			isa = PBXGroup;
+			children = (
+				FAE3CFA219060BCD0090909E /* IPAddress.h */,
+				FAE3CFA319060BCD0090909E /* IPAddress.m */,
+				FAE3CFA519060F5D0090909E /* IPGetInfoRequest.h */,
+				FAE3CFA619060F5D0090909E /* IPGetInfoRequest.m */,
+				FAE3CF6D190609370090909E /* IPLookup */,
+				FAE3CF8C190609370090909E /* IPLookupTests */,
+				FAE3CF66190609370090909E /* Frameworks */,
+				FAE3CF65190609370090909E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE3CF65190609370090909E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CF64190609370090909E /* IPLookup.app */,
+				FAE3CF85190609370090909E /* IPLookupTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE3CF66190609370090909E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CF9C19060B160090909E /* MapKit.framework */,
+				FAE3CF67190609370090909E /* Foundation.framework */,
+				FAE3CF69190609370090909E /* CoreGraphics.framework */,
+				FAE3CF6B190609370090909E /* UIKit.framework */,
+				FAE3CF86190609370090909E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAE3CF6D190609370090909E /* IPLookup */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CF76190609370090909E /* IPAppDelegate.h */,
+				FAE3CF77190609370090909E /* IPAppDelegate.m */,
+				FAE3CF79190609370090909E /* Main.storyboard */,
+				FAE3CF9E19060B850090909E /* Controller */,
+				FAE3CF7F190609370090909E /* Images.xcassets */,
+				FAE3CF6E190609370090909E /* Supporting Files */,
+			);
+			path = IPLookup;
+			sourceTree = "<group>";
+		};
+		FAE3CF6E190609370090909E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CF6F190609370090909E /* IPLookup-Info.plist */,
+				FAE3CF70190609370090909E /* InfoPlist.strings */,
+				FAE3CF73190609370090909E /* main.m */,
+				FAE3CF75190609370090909E /* IPLookup-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAE3CF8C190609370090909E /* IPLookupTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CF92190609370090909E /* IPLookupTests.m */,
+				FAE3CF8D190609370090909E /* Supporting Files */,
+			);
+			path = IPLookupTests;
+			sourceTree = "<group>";
+		};
+		FAE3CF8D190609370090909E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CF8E190609370090909E /* IPLookupTests-Info.plist */,
+				FAE3CF8F190609370090909E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAE3CF9E19060B850090909E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAE3CF7C190609370090909E /* IPViewController.h */,
+				FAE3CF7D190609370090909E /* IPViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAE3CF63190609370090909E /* IPLookup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE3CF96190609370090909E /* Build configuration list for PBXNativeTarget "IPLookup" */;
+			buildPhases = (
+				FAE3CF60190609370090909E /* Sources */,
+				FAE3CF61190609370090909E /* Frameworks */,
+				FAE3CF62190609370090909E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPLookup;
+			productName = IPLookup;
+			productReference = FAE3CF64190609370090909E /* IPLookup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAE3CF84190609370090909E /* IPLookupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE3CF99190609370090909E /* Build configuration list for PBXNativeTarget "IPLookupTests" */;
+			buildPhases = (
+				FAE3CF81190609370090909E /* Sources */,
+				FAE3CF82190609370090909E /* Frameworks */,
+				FAE3CF83190609370090909E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE3CF8B190609370090909E /* PBXTargetDependency */,
+			);
+			name = IPLookupTests;
+			productName = IPLookupTests;
+			productReference = FAE3CF85190609370090909E /* IPLookupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE3CF5C190609370090909E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex Cummaudo";
+				TargetAttributes = {
+					FAE3CF84190609370090909E = {
+						TestTargetID = FAE3CF63190609370090909E;
+					};
+				};
+			};
+			buildConfigurationList = FAE3CF5F190609370090909E /* Build configuration list for PBXProject "IPLookup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAE3CF5B190609370090909E;
+			productRefGroup = FAE3CF65190609370090909E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE3CF63190609370090909E /* IPLookup */,
+				FAE3CF84190609370090909E /* IPLookupTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE3CF62190609370090909E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3CF80190609370090909E /* Images.xcassets in Resources */,
+				FAE3CF72190609370090909E /* InfoPlist.strings in Resources */,
+				FAE3CF7B190609370090909E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3CF83190609370090909E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3CF91190609370090909E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE3CF60190609370090909E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3CFA419060BCD0090909E /* IPAddress.m in Sources */,
+				FAE3CF74190609370090909E /* main.m in Sources */,
+				FAE3CF78190609370090909E /* IPAppDelegate.m in Sources */,
+				FAE3CFA719060F5D0090909E /* IPGetInfoRequest.m in Sources */,
+				FAE3CF7E190609370090909E /* IPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE3CF81190609370090909E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE3CF93190609370090909E /* IPLookupTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE3CF8B190609370090909E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE3CF63190609370090909E /* IPLookup */;
+			targetProxy = FAE3CF8A190609370090909E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAE3CF70190609370090909E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE3CF71190609370090909E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAE3CF79190609370090909E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE3CF7A190609370090909E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAE3CF8F190609370090909E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE3CF90190609370090909E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAE3CF94190609370090909E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAE3CF95190609370090909E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAE3CF97190609370090909E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPLookup/IPLookup-Prefix.pch";
+				INFOPLIST_FILE = "IPLookup/IPLookup-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAE3CF98190609370090909E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPLookup/IPLookup-Prefix.pch";
+				INFOPLIST_FILE = "IPLookup/IPLookup-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FAE3CF9A190609370090909E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IPLookup.app/IPLookup";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPLookup/IPLookup-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IPLookupTests/IPLookupTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FAE3CF9B190609370090909E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IPLookup.app/IPLookup";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IPLookup/IPLookup-Prefix.pch";
+				INFOPLIST_FILE = "IPLookupTests/IPLookupTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE3CF5F190609370090909E /* Build configuration list for PBXProject "IPLookup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE3CF94190609370090909E /* Debug */,
+				FAE3CF95190609370090909E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE3CF96190609370090909E /* Build configuration list for PBXNativeTarget "IPLookup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE3CF97190609370090909E /* Debug */,
+				FAE3CF98190609370090909E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAE3CF99190609370090909E /* Build configuration list for PBXNativeTarget "IPLookupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE3CF9A190609370090909E /* Debug */,
+				FAE3CF9B190609370090909E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAE3CF5C190609370090909E /* Project object */;
+}
